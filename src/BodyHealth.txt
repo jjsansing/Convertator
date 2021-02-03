@@ -1,0 +1,45 @@
+Body Mass Index
+
+BMI = Mass kg / (Ht me ^ 2)
+BMI = (Mass lb * 703) / (Ht in ^ 2)
+BMI = (Mass lb * 4.88) / (Ht ft ^ 2)
+
+Underweight: BMI < 18.5
+Normal: BMI = 18.5 - 25
+Overweight: BMI = 25 - 30
+Obese: BMI > 30
+
+BMI ranges: Underweight < 18.5 < Normal < 25 < Overweight < 30 < Obese
+
+Calories per pound: 3500
+Calories per Kilogram: 7,716
+
+Calories burned during exercise:
+
+Using VO2max
+  Men: C/min = (-59.3954 + (-36.3781 + (0.271 * Age) + (0.394 * WtKgs) + (0.404 * VO2max) + (0.634 * HtRt))) / 4.184
+  Men: C/min = (-59.3954 + (-36.3781 + (0.271 * Age) + (0.179 * WtLbs) + (0.404 * VO2max) + (0.634 * HtRt))) / 4.184
+  Women: C/min = (-59.3954 + ((0.274 * Age) + (0.103 * WtKgs) + (0.380 * VO2max) + (0.450 * HtRt))) / 4.184
+  Women: C/min = (-59.3954 + ((0.274 * Age) + (0.047 * WtLbs) + (0.380 * VO2max) + (0.450 * HtRt))) / 4.184
+
+Without VO2max
+  Men: C/min = (-55.097 + (0.631 * HtRt) + (0.199 * WtKgs) + (0.202 * Age)) / 4.184
+  Men: C/min = (-55.097 + (0.631 * HtRt) + (0.090 * WtLbs) + (0.202 * Age)) / 4.184
+  Women: C/min = (-20.402 + (0.447 * HtRt) + (0.126 * WtKgs) + (0.074 * Age)) / 4.184
+  Women: C/min = (-20.402 + (0.447 * HtRt) + (0.057 * WtLbs) + (0.074 * Age)) / 4.184
+
+VO2max: The maximum amount of oxygen in millilitres, one can use in one minute
+per kilogram of body weight.  A mean value of VO2max for male athletes is
+about 3.5 litres/minute and for female athletes it is about 2.7 litres/minute.
+
+   Age     Male        Female
+  10-19 	47-56 (51)  38-46 (42)
+  20-29 	43-52 (48)  33-42 (38)
+  30-39 	39-48 (43)  30-38 (34)
+  40-49 	36-44 (40)  26-35 (30)
+  50-59 	34-41 (37)  24-33 (28)
+  60-69 	31-38 (34)  22-30 (26)
+  70-79 	28-35 (31)  20-27 (23)
+
+
+

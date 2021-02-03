@@ -1,0 +1,67 @@
+          Convertator - The converting calculator
+
+                           ERRORS
+
+When errors occur in Convertator, an error code is displayed in the result field.  The meanings of these codes are described below.  Where the following abbreviations are found, there is an actual value displayed in the error code.  Otherwise, the display is what is shown.
+
+  op = operator
+  val = value
+  sval = string value
+  un = unit
+  b = base
+  fn = function
+
+?? Internal  :::  Application internal error
+?? Stack Err  :::  Error adding operand to internal stack
+?? Loop  :::  Calculation causes infinite loop in application
+?? Math Err  :::  Math operation error (probably divide by zero)
+?? Null  :::  No operands in equation result
+?? Null Group :::  While reducing groups, one lost all operands
+?? / Null  :::  No divisor in division
+?? No Unit  :::  An error occured getting the list of units in the result
+?? Max ()  :::  Nesting exceeds maximum allowed
+
+?? (  :::  Not enough open parentheses
+?? )  :::  Not enough close parentheses
+?? !Op(op op) :::  Operators not grouped with parentheses
+?? ()op()  :::  Unable to perform operation on groups
+?? (//)  :::  Division not grouped with parentheses
+?? Op(op)  :::  Invalid group operation
+?? No Value  :::  A group of units do not have a primary value
+?? op  :::  Operator must be preceeded by a value
+?? fn  :::  Unknown function
+?? Result  :::  The change result button is clicked with no result
+
+?? b|  :::  Base with invalid value
+?? Base  :::  Invalid base for string data
+?? val  :::  Invalid value
+?? #.#  :::  Non-numeric dotted decimal value
+?? dd<0  :::  Each dotted decimal value must be greater than 0
+?? dd>255  :::  Each dotted decimal value must be less than 255
+?? 'Char Code' :::  Invalid character encoding value
+?? Unit un  :::  Unit abbreviation does not exist
+
+?? ()%()  :::  Modulus must be a single value
+?? N%val  :::  Modulus must be an integer
+?? Units%Units  :::  Modulus must be same units as operand
+?? ()%val :::  Modulus for group must be integer
+?? un%un  :::  Modulo arithmetic not allowed on different units
+
+?? ^val  :::  Power value without operand
+?? ^un  :::  Units not allowed in power value
+?? ()^()  :::  Power value may not be a group
+?? ()^un  :::  Power value for group may not have a unit
+?? ()^i.d  :::  Power value must be integer to operate on a group
+?? \(val un^val) :::  Square root of groups not allowed
+
+?? un op un :::  Logic operations require all units to be the same type
+?? ()L()  :::  Logic operations allow only one group
+
+?? Function Group :::  First operand in group operation not a function
+?? fn()  :::  Only single operand allowed in function
+?? fn(!g|r)  :::  Function requires degrees or radians
+?? fn(un)  :::  Function does not allow units
+?? fn sval  :::  Function does not allow string value
+?? fn(<0)  :::  Function does not allow values less than zero
+?? 1/0  :::  Function results in division by zero
+

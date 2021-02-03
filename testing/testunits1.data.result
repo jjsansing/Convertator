@@ -1,0 +1,360 @@
+(1ft + 2sec) + (3ft)  
+Result:  4.0 ft + 2.0 sec
+Expected:   4ft + 2sec
+________________
+
+(1ft * 2sec) + (3ft)  
+Result:  2.0 ft*sec + 3.0 ft
+Expected:   2ft*sec + 3ft
+________________
+
+(1ft / 2sec) + (3ft)  
+Result:  0.5 ft + 3.0 ft*sec / 1.0 sec
+Expected:   0.5ft + 3ft*sec / sec
+________________
+
+(1ft + 2sec) + (3ft + 4sec)  
+Result:  4.0 ft + 6.0 sec
+Expected:   4ft + 6sec
+________________
+
+(1ft * 2sec) + (3ft + 4sec)  
+Result:  2.0 ft*sec + 3.0 ft + 4.0 sec
+Expected:   2ft*sec + 3ft + 4sec
+________________
+
+(1ft / 2sec) + (3ft + 4sec)  
+Result:  0.5 ft + 3.0 ft*sec + 4.0 sec^2 / 1.0 sec
+Expected:   0.5ft + 3ft*sec + 4sec^2 / sec
+________________
+
+(1ft + 2sec) + (3ft * 4sec)  
+Result:  1.0 ft + 2.0 sec + 12.0 ft*sec
+Expected:   1ft + 2sec + 12 ft*sec
+________________
+
+(1ft * 2sec) + (3ft * 4sec)  
+Result:  14.0 ft*sec
+Expected:   14ft*sec
+________________
+
+(1ft / 2sec) + (3ft * 4sec)  
+Result:  0.5 ft + 12.0 ft*sec^2 / 1.0 sec
+Expected:   0.5 ft + 12ft*sec^2 / sec
+________________
+
+(1ft + 2sec) + (3ft / 4sec)  
+Result:  1.0 ft*sec + 2.0 sec^2 + 0.75 ft / 1.0 sec
+Expected:   1ft*sec + 2sec^2 + 0.75ft / sec
+________________
+
+(1ft * 2sec) + (3ft / 4sec)  
+Result:  2.0 ft*sec^2 + 0.75 ft / 1.0 sec
+Expected:   2ft*sec^2 + 0.75ft / sec
+________________
+
+(1ft / 2sec) + (3ft / 4sec)  
+Result:  1.25 ft / 1.0 sec
+Expected:   1.25ft / sec
+________________
+
+(1ft + 2sec) * (3ft)  
+Result:  3.0 ft^2 + 6.0 ft*sec
+Expected:   3ft^2 + 6ft*sec
+________________
+
+(1ft * 2sec) * (3ft)  
+Result:  6.0 ft^2*sec
+Expected:   6ft^2*sec
+________________
+
+(1ft / 2sec) * (3ft)  
+Result:  1.5 ft^2 / 1.0 sec
+Expected:   1.5ft^2 / sec
+________________
+
+(1ft + 2sec) * (3ft + 4sec)  
+Result:  3.0 ft^2 + 10.0 ft*sec + 8.0 sec^2
+Expected:   3ft^2 + 10ft*sec + 8sec^2
+________________
+
+(1ft * 2sec) * (3ft + 4sec)  
+Result:  6.0 ft^2*sec + 8.0 ft*sec^2
+Expected:   6ft^2*sec + 8ft*sec^2
+________________
+
+(1ft / 2sec) * (3ft + 4sec)  
+Result:  1.5 ft^2 + 2.0 ft*sec / 1.0 sec
+Expected:   1.5ft^2 + 2ft*sec / sec
+________________
+
+(1ft + 2sec) * (3ft * 4sec)  
+Result:  12.0 ft^2*sec + 24.0 ft*sec^2
+Expected:   12ft^2*sec + 24ft*sec^2
+________________
+
+(1ft * 2sec) * (3ft * 4sec)  
+Result:  24.0 ft^2*sec^2
+Expected:   24ft^2*sec^2
+________________
+
+(1ft / 2sec) * (3ft * 4sec)  
+Result:  6.0 ft^2
+Expected:   6ft^2
+________________
+
+(1ft + 2sec) * (3ft / 4sec)  
+Result:  0.75 ft^2 + 1.5 ft*sec / 1.0 sec
+Expected:   0.75ft^2 + 1.5ft*sec / sec
+________________
+
+(1ft * 2sec) * (3ft / 4sec)  
+Result:  1.5 ft^2
+Expected:   1.5ft^2
+________________
+
+(1ft / 2sec) * (3ft / 4sec)  
+Result:  0.375 ft^2 / 1.0 sec^2
+Expected:   0.375ft^2 / sec^2
+________________
+
+(1ft + 2sec) / (3ft)  
+Result:  0.33333 ft + 0.66667 sec / 1.0 ft
+Expected:   0.33ft + 0.67sec / ft
+________________
+
+(1ft * 2sec) / (3ft)  
+Result:  0.66667 sec
+Expected:   0.67sec
+________________
+
+(1ft / 2sec) / (3ft)  
+Result:  0.16667  / 1.0 sec
+Expected:   0.167 / sec
+________________
+
+(1ft + 2sec) / (3ft + 4sec)  
+Result:  0.33333 ft + 0.66667 sec / 1.0 ft + 1.33333 sec
+Expected:   0.33ft + 0.67sec / 1ft + 1.33sec
+________________
+
+(1ft * 2sec) / (3ft + 4sec)  
+Result:  0.66667 ft*sec / 1.0 ft + 1.33333 sec
+Expected:   0.67ft*sec / 1ft + 1.33sec
+________________
+
+(1ft / 2sec) / (3ft + 4sec)  
+Result:  0.16667 ft / 1.0 ft*sec + 1.33333 sec^2
+Expected:   0.167ft / 1ft*sec + 1.33sec^2
+________________
+
+(1ft + 2sec) / (3ft * 4sec)  
+Result:  0.08333 ft + 0.16667 sec / 1.0 ft*sec
+Expected:   0.083ft + 0.167sec / ft*sec
+________________
+
+(1ft * 2sec) / (3ft * 4sec)  
+Result:  0.16667 
+Expected:   0.167
+________________
+
+(1ft / 2sec) / (3ft * 4sec)  
+Result:  0.04167  / 1.0 sec^2
+Expected:   0.042 / sec^2
+________________
+
+(1ft + 2sec) / (3ft / 4sec)  
+Result:  1.33333 ft*sec + 2.66667 sec^2 / 1.0 ft
+Expected:   1.33ft*sec + 2.67sec^2 / ft
+________________
+
+(1ft * 2sec) / (3ft / 4sec)  
+Result:  2.66667 sec^2
+Expected:   2.67sec^2
+________________
+
+(1ft / 2sec) / (3ft / 4sec)  
+Result:  0.66667 
+Expected:   0.67
+________________
+
+(1ft + -2sec) + (3ft)  
+Result:  4.0 ft - 2.0 sec
+Expected:   4ft - 2sec
+________________
+
+(1ft * -2sec) + (3ft)  
+Result:  -2.0 ft*sec + 3.0 ft
+Expected:   -2ft*sec + 3ft
+________________
+
+(1ft / -2sec) + (3ft)  
+Result:  -0.5 ft + 3.0 ft*sec / 1.0 sec
+Expected:   -0.5ft + 3ft*sec / sec
+________________
+
+(1ft + -2sec) + (3ft + 4sec)  
+Result:  4.0 ft + 2.0 sec
+Expected:   4ft + 2sec
+________________
+
+(1ft * -2sec) + (3ft + 4sec)  
+Result:  -2.0 ft*sec + 3.0 ft + 4.0 sec
+Expected:   -2ft*sec + 3ft + 4sec
+________________
+
+(1ft / -2sec) + (3ft + 4sec)  
+Result:  -0.5 ft + 3.0 ft*sec + 4.0 sec^2 / 1.0 sec
+Expected:   -0.5ft + 3ft*sec + 4sec^2 / sec
+________________
+
+(1ft + -2sec) + (3ft * 4sec)  
+Result:  1.0 ft - 2.0 sec + 12.0 ft*sec
+Expected:   1ft - 2sec + 12 ft*sec
+________________
+
+(1ft * -2sec) + (3ft * 4sec)  
+Result:  10.0 ft*sec
+Expected:   10ft*sec
+________________
+
+(1ft / -2sec) + (3ft * 4sec)  
+Result:  -0.5 ft + 12.0 ft*sec^2 / 1.0 sec
+Expected:   -0.5 ft + 12ft*sec^2 / sec
+________________
+
+(1ft + -2sec) + (3ft / 4sec)  
+Result:  1.0 ft*sec - 2.0 sec^2 + 0.75 ft / 1.0 sec
+Expected:   1ft*sec - 2sec^2 + 0.75ft / sec
+________________
+
+(1ft * -2sec) + (3ft / 4sec)  
+Result:  -2.0 ft*sec^2 + 0.75 ft / 1.0 sec
+Expected:   -2ft*sec^2 + 0.75ft / sec
+________________
+
+(1ft / -2sec) + (3ft / 4sec)  
+Result:  0.25 ft / 1.0 sec
+Expected:   0.25ft / sec
+________________
+
+(1ft + -2sec) * (3ft)  
+Result:  3.0 ft^2 - 6.0 ft*sec
+Expected:   3ft^2 - 6ft*sec
+________________
+
+(1ft * -2sec) * (3ft)  
+Result:  -6.0 ft^2*sec
+Expected:   -6ft^2*sec
+________________
+
+(1ft / -2sec) * (3ft)  
+Result:  -1.5 ft^2 / 1.0 sec
+Expected:   -1.5ft^2 / sec
+________________
+
+(1ft + -2sec) * (3ft + 4sec)  
+Result:  3.0 ft^2 - 2.0 ft*sec - 8.0 sec^2
+Expected:   3ft^2 - 2ft*sec - 8sec^2
+________________
+
+(1ft * -2sec) * (3ft + 4sec)  
+Result:  -6.0 ft^2*sec - 8.0 ft*sec^2
+Expected:   -6ft^2*sec - 8ft*sec^2
+________________
+
+(1ft / -2sec) * (3ft + 4sec)  
+Result:  -1.5 ft^2 - 2.0 ft*sec / 1.0 sec
+Expected:   -1.5ft^2 - 2ft*sec / sec
+________________
+
+(1ft + -2sec) * (3ft * 4sec)  
+Result:  12.0 ft^2*sec - 24.0 ft*sec^2
+Expected:   12ft^2*sec - 24ft*sec^2
+________________
+
+(1ft * -2sec) * (3ft * 4sec)  
+Result:  -24.0 ft^2*sec^2
+Expected:   -24ft^2*sec^2
+________________
+
+(1ft / -2sec) * (3ft * 4sec)  
+Result:  -6.0 ft^2
+Expected:   -6ft^2
+________________
+
+(1ft + -2sec) * (3ft / 4sec)  
+Result:  0.75 ft^2 - 1.5 ft*sec / 1.0 sec
+Expected:   0.75ft^2 - 1.5ft*sec / sec
+________________
+
+(1ft * -2sec) * (3ft / 4sec)  
+Result:  -1.5 ft^2
+Expected:   -1.5ft^2
+________________
+
+(1ft / -2sec) * (3ft / 4sec)  
+Result:  -0.375 ft^2 / 1.0 sec^2
+Expected:   -0.375ft^2 / sec^2
+________________
+
+(1ft + -2sec) / (3ft)  
+Result:  0.33333 ft - 0.66667 sec / 1.0 ft
+Expected:   0.33ft - 0.67sec / ft
+________________
+
+(1ft * -2sec) / (3ft)  
+Result:  -0.66667 sec
+Expected:   -0.67sec
+________________
+
+(1ft / -2sec) / (3ft)  
+Result:  -0.16667  / 1.0 sec
+Expected:   -0.167 / sec
+________________
+
+(1ft + -2sec) / (3ft + 4sec)  
+Result:  0.33333 ft - 0.66667 sec / 1.0 ft + 1.33333 sec
+Expected:   0.33ft - 0.67sec / 1ft + 1.33sec
+________________
+
+(1ft * -2sec) / (3ft + 4sec)  
+Result:  -0.66667 ft*sec / 1.0 ft + 1.33333 sec
+Expected:   -0.67ft*sec / 1ft + 1.33sec
+________________
+
+(1ft / -2sec) / (3ft + 4sec)  
+Result:  -0.125 ft / 0.75 ft*sec + 1.0 sec^2
+Expected:   0.167ft / -1ft*sec - 1.33sec^2
+________________
+
+(1ft + -2sec) / (3ft * 4sec)  
+Result:  0.08333 ft - 0.16667 sec / 1.0 ft*sec
+Expected:   0.083ft - 0.167sec / ft*sec
+________________
+
+(1ft * -2sec) / (3ft * 4sec)  
+Result:  -0.16667 
+Expected:   -0.167
+________________
+
+(1ft / -2sec) / (3ft * 4sec)  
+Result:  -0.04167  / 1.0 sec^2
+Expected:   -0.042 / sec^2
+________________
+
+(1ft + -2sec) / (3ft / 4sec)  
+Result:  1.33333 ft*sec - 2.66667 sec^2 / 1.0 ft
+Expected:   1.33ft*sec - 2.67sec^2 / ft
+________________
+
+(1ft * -2sec) / (3ft / 4sec)  
+Result:  -2.66667 sec^2
+Expected:   -2.67sec^2
+________________
+
+(1ft / -2sec) / (3ft / 4sec)  
+Result:  -0.66667 
+Expected:   -0.67
+________________
+

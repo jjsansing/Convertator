@@ -1,0 +1,45 @@
+
+A   	the loan amount (the principal sum) or initial investment
+B_n or Bn  the balance after n payments have been made
+F   	the future amount accumulated by a stream of payments
+i   	the interest rate per period, not per year
+	(if loan payments are made monthly and the interest rate is 9%
+		then i = 9%/12 = 0.75% = 0.0075.)
+n   	the number of time periods elapsed at any given point
+N   	the total number of payments for the entire loan or investment
+P   	the amount of each equal payment
+
+(1)  Loan balance after n payments have been made
+	B(n) = (Loan * ((1+(Int/1200))^MonPd)) − ((Pymt/(Int/1200)) * (((1+(Int/1200))^MonPd) − 1))
+ (For interest accrued, change the first minus sign to a plus.)
+(200000 * ((1+(6 /1200))^ 60)) - ((1199.10/(6/1200)) * (((1+(6 /1200))^60) - 1))
+
+(2)  Payment amount on a loan
+	P = iA/[1 − (1+i)^-N]
+(3)  Number of payments on a loan
+	N = −log(1−iA/P) / log(1+i)
+(4)  Original loan amount
+	A = (P/i)[1 − (1+i)^-N]
+(5)  Payment amount to reach an investment goal
+	P = iF/[(1+i)^N − 1]
+(6)  Number of payments to reach an investment goal
+	N = log(1+iA/P) / log(1+i)
+
+
+Loan Payments (US)
+(Loan * (Int /1200)) / (1 - ((1 + (Int /1200)) ^ (Yrs * -12)))
+Loan Payments (Canada)
+(Loan * (((1+(0.Int /2))^0.16667)-1)) / (1-((1 + (0.Int /2))^0.16667)^(-12 * Yrs))
+
+Number of Payments
+((l(1-((Loan / Pymt)*(Int /12))))/l(1+(Int/12))) * -1
+
+((l(1-((200000 / 1450)*(0.06 /12))))/l(1+(0.06/12))) * (-1)
+((l(1-((200000 / 1450)*0.05)))/l(1+0.005)) * (-1)
+((l(1-(137.931*0.05)))/l(1.005)) * (-1)
+(l(-5.8966))/l(1.005)) * (-1)
+(1.7744/l(1.005)) * (-1)
+(1.7744/0.005) * (-1)
+
+Balance after N Payments
+

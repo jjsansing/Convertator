@@ -1,0 +1,50 @@
+x1 & xf 
+Result: x 1 
+Expected:  x1
+________________
+
+x1 | x2 
+Result: x 3 
+Expected:  x3
+________________
+
+x1 # x2 
+Result: x 3 
+Expected:  x3
+________________
+
+x1 # x5 
+Result: x 4 
+Expected:  x4
+________________
+
+!x1 
+Result: x fffffffffffffffe 
+Expected:  xfffffffe
+________________
+
+(x2 & f) | (7 & 6) 
+Result: x 6 
+Expected:  x6
+________________
+
+!(x70 & f0) # (70 + 6) 
+Result: x fffffffffffffff9 
+Expected:  xfffffff9
+________________
+
+!(x2 & f) 
+Result: x fffffffffffffffd 
+Expected:  xfffffffd
+________________
+
+(x700 | 6) 
+Result: x 706 
+Expected:  x706
+________________
+
+!(x2 & f) & (x700 | 6) 
+Result: x 704 
+Expected:  x704
+________________
+

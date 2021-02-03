@@ -1,0 +1,14 @@
+          Convertator - The converting calculator
+
+                 PREFERENCES
+
+  Primary Language:  The primary language is used for all text displayed in the Convertator interface.  It is also used for displaying available download files.
+
+  Secondary Language:  The secondary language is used for displaying available download files.
+
+  Sound Theme:  Sound files are grouped by theme.  The default Convertator sound theme is included with the basic application.
+
+  Default Site:  The default download site is displayed in the 'Import from Web' page.  It is checked every 24 hours or after Convertator has been started, whichever is longest.
+
+  Convertator download sites provide constant, equation, and unit files shared by users.  These files are organized by language, and then by other groupings that are explained on the 'Import from Web' screen help.
+

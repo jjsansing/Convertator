@@ -1,0 +1,53 @@
+          Convertator - The converting calculator
+
+                IMPORT FROM THE WEB
+
+This feature allows Convertator users to share Unit, Constant, and Equation definitions.  The default download site data is included with the application.  Other sites may be added, and while it is always important to be cautious when downloading data from the Web, Convertator verifies the data before accepting it.
+
+See the demos at https://github.com/jjsansing/Convertator for examples of how to create and share Units, Constants, and Equations in Convertator.
+
+--- MENU BAR ---
+
+The Convertator Import window has a menu bar at the top which provides the following:
+
+  File ->
+
+    Quit:  This closes the Import window.
+
+  Help ->
+
+    This displays helpful information about the Convertator Import feature.
+
+--- SITE INFORMATION ---
+
+  Site:  This menu contains the list of download sites.
+
+  Add/Update:  This button adds the data in the following text fields to the Site list.
+
+  Refresh:  This button retrieves the information about available data files from the selected site, and uses it to repopulate the Units, Constants, and Equations lists
+
+  Name: This is the name of a new or existing site to be included in the site list.
+
+  Domain:  This is the URL of the site.  It must be of the form "http://<domain>".
+
+  Path:  This is the path from the domain to the update file.
+
+The site should supply the Domain and Path information.
+
+
+--- DOWNLOAD SELECTIONS ---
+
+Convertator download sites maintain files of Units, Constants, and Equations.  These may be downloaded individually.  The site should contain descriptions and previews of each customized category.
+
+Units
+
+To download a Unit category, click on the Units radio button, select the Unit category, and click on the Download button.
+
+ Constants
+
+To download a Constant category, click on the Constants radio button, select the type of Constants, select the Constant category, and click on the Download button.
+
+ Equations
+
+To download a Equation category, click on the Equations radio button, select the type of Equations, select the Equation category, and click on the Download button.
+

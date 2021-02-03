@@ -1,0 +1,22 @@
+          Convertator - The converting calculator
+
+Convertator is a calculator that does many types of conversions.  It will calculate equations that include units and change those units to others of the same type.  It converts between a variety of bases, such as numeric to string values, and network addresses to hexadecimal.  A history of equations and their results are kept in menus so they can be reused and modified.
+
+Constants and pre-defined Equations are provided to make calculations easy.  Also, Units, Constants, and Equations may be added or modified, allowing you to customize Convertator for your specific needs.
+
+For detailed help, see the following:
+
+  Main Window:  This describes all of the fields on the main window.
+
+  Calculations:  This describes the supported capabilities and limitations of equations.
+
+  List of Units:  This quick reference provides the unit abbreviations that are used by Convertator, including custom Unit types.
+
+  Errors:  This quick reference explains the error codes displayed in the Result field.
+
+  Data License:  This is the full text of the license for the Unit, Constant, and Equation data.
+
+There are also help files for the Customization and Import from Web screens to explain how to use them.
+
+For more information and support, visit https://github.com/jjsansing/Convertator and look through the Convertator pages.
+

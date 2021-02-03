@@ -1,0 +1,145 @@
+(1ft / 2sec) + (3ft / 4sec)  
+Result:  1.25 ft / 1.0 sec
+Expected:   1.25ft / sec
+________________
+
+((1ft * 2) /(3sec * 4)) + (5ft / 6sec)  
+Result:  1.0 ft / 1.0 sec
+Expected:   1ft / sec
+________________
+
+((1ft * 2) /(3sec * 4)) + (2 * (5ft / 6sec))  
+Result:  1.83333 ft / 1.0 sec
+Expected:   1.83ft / sec
+________________
+
+(1ft + 2lb) * (3ft + 4lb)  
+Result:  3.0 ft^2 + 10.0 ft*lb + 8.0 lb^2
+Expected:   3ft^2 + 10ft*lb + 8lb^2
+________________
+
+(2 * (1ft + 2lb)) * (3ft + 4lb)  
+Result:  6.0 ft^2 + 20.0 ft*lb + 16.0 lb^2
+Expected:   6ft^2 + 20ft*lb + 16lb^2
+________________
+
+(1ft + 2lb) * (2 *(3ft + 4lb))  
+Result:  6.0 ft^2 + 20.0 ft*lb + 16.0 lb^2
+Expected:   6ft^2 + 20ft*lb + 16lb^2
+________________
+
+(1ft + 2lb) * ((3ft + 4lb) * 2)  
+Result:  6.0 ft^2 + 20.0 ft*lb + 16.0 lb^2
+Expected:   6ft^2 + 20ft*lb + 16lb^2
+________________
+
+1ft / ((2sec / 3ft) + (4sec /5ft))  
+Result:  0.68182 ft^2 / 1.0 sec
+Expected:   0.682ft^2 / sec
+________________
+
+1ft / (2sec + (3sec /4))  
+Result:  0.36364 ft / 1.0 sec
+Expected:   0.364ft / sec
+________________
+
+(1ft /((2sec / 3ft) + (4sec /5ft))) + (6ft / (7sec / 8ft))  
+Result:  7.53896 ft^2 / 1.0 sec
+Expected:   7.539ft^2 / sec
+________________
+
+(1ft + 2lb) / ((3sec / 4ft) + (5sec / 6ft))  
+Result:  0.63158 ft^2 + 1.26316 ft*lb / 1.0 sec
+Expected:   0.63ft^2 + 1.26ft*lb / sec
+________________
+
+((1ft + 2lb) / ((3sec + 4ft) * 5)) / (6sec + 7ft)  
+Result:  0.01111 ft + 0.02222 lb / 1.0 sec^2 + 2.5 ft*sec + 1.55556 ft^2
+Expected:  0.01ft + 0.02lb / 1sec^2 + 2.5ft*sec + 1.56ft^2
+________________
+
+(1ft + 2lb) / (((3sec + 4ft) * 5) / (6sec + 7ft))  
+Result:  0.4 ft*sec + 0.46667 ft^2 + 0.8 sec*lb + 0.93333 ft*lb / 1.0 sec + 1.33333 ft
+Expected:  0.4ft*sec + 0.47ft^2 + 0.8sec*lb + 0.93ft*lb / 1sec + 1.33ft
+________________
+
+((1ft + 2lb) / (3sec / 4ft)) + (5sec / 6ft) 
+Result:  1.33333 ft^3 + 2.66667 ft^2*lb + 0.83333 sec^2 / 1.0 ft*sec
+Expected:  1.3333 ft^3 + 2.6667 ft^2*lb + 0.8333 sec^2 /ft*sec
+________________
+
+((1.3333 ft^2 + (2.6667 ft*1lb)) /sec) + (5sec / 6ft) 
+Result:  1.77769 ft^3 + 2.6667 ft^2*lb + 0.83333 sec^2 / 1.0 ft*sec
+Expected:  1.7777 ft^3 + 2.6667 ft^2*lb + 0.8333 sec^2 /ft*sec
+________________
+
+((1ft + 2lb) / (3sec / 4ft)) + (5sec / 6ft) + (7sec / 8ft) 
+Result:  1.33333 ft^3 + 2.66667 ft^2*lb + 1.70833 sec^2 / 1.0 ft*sec
+Expected:  1.33ft^3 + 2.67ft^2*lb + 1.71sec^2 /ft*sec
+________________
+
+((1ft + 2lb) / (3sec / 4ft)) + (5sec / 6ft) + ((7sec * 8lb) / 9ft) 
+Result:  1.33333 ft^3 + 2.66667 ft^2*lb + 0.83333 sec^2 + 6.22222 sec^2*lb / 1.0 ft*sec
+Expected:  1.33ft^3 + 2.67ft^2*lb + 0.83sec^2 + 6.22sec^2*lb /ft*sec
+________________
+
+(1ft * 2sec) + (3ft * 4sec)  
+Result:  14.0 ft*sec
+Expected:   14ft*sec
+________________
+
+(1ft * 2sec) + (3ft * 4sec) + (5ft * 6.5sec)  
+Result:  46.5 ft*sec
+Expected:   46.5ft*sec
+________________
+
+((1ft * 2sec)/( 3ft * 4sec)) + ((5ft * 6sec)/(7ft * 8sec))  
+Result:  0.04762 ft*sec / 1.0 ft*sec / 1.33333 ft*sec
+Expected:   0.702
+________________
+
+((1ft * 2lb) / (3ft / 4lb)) + (5ft / 6lb)  
+Result:  2.66667 lb^3 + 0.83333 ft / 1.0 lb
+Expected:   2.667lb^3 + 0.83ft / lb
+________________
+
+(1ft * 2lb) / ((3ft / 4lb) + (5ft / 6lb))  
+Result:  1.26316 lb^2
+Expected:   1.26lb^2
+________________
+
+(4ft + 9in) / (3sec + 1ft)  
+Result:  19.0 in / 1.0 sec + 4.0 in
+Expected:   19in / 1sec + 4in
+________________
+
+((32.0ft/sec)/sec) * 22 sec  
+Result:  704.0 ft / 1.0 sec
+Expected:   704ft / sec
+________________
+
+(2yd + 3ft) % 16in 
+Result:  12.0 in
+Expected:  12in
+________________
+
+(2yd + 3ft) % 1ft 
+Result:  0.0 ft
+Expected:  0ft
+________________
+
+(2yd + 3ft) % 12in 
+Result:  0.0 in
+Expected:  0in
+________________
+
+(3ft^2 + 4lb) / 9in 
+Result:  144.0 in^2 + 0.44444 lb / 1.0 in
+Expected:  12in + 0.44444lb / 1in
+________________
+
+(25369600697.722 ton / 1mi^3) * ((4 * 3969.34mi^3 * 3.14159265) / 3) 
+Result:  6645951116597786000000.0 ton
+Expected:  66.460E20 ton
+________________
+

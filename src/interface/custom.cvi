@@ -1,0 +1,94 @@
+          Convertator - The converting calculator
+
+                  CUSTOMIZATION
+
+Convertator allows Units, Constants, and Equations to be created and customized.  The radio buttons at the top determine which type is to be edited and the Category popup list determines the group in that type.
+
+See the demos at https://github.com/jjsansing/Convertator for examples of how to create and share Units, Constants, and Equations in Convertator.
+
+--- MENU BAR ---
+
+The Convertator Customization window has a menu bar at the top which provides the following:
+
+  File ->
+
+    Export to File: This will save the new Units, Constants, or Equations to a file.  Convertator attempts to save the group file to the user's home Convertator directory.  If the file exists, a message window is displayed to verify that it may be overwritten.  
+
+    Quit:  This closes the Customization window.
+
+  Help ->
+
+    This displays helpful information about Convertator Customization.
+
+The data for units, constants, and equations are kept in data files with a '.cvd' extension.  The name of the file the category name.  Thus, the Distance.cvd file contains the data for the Distance units.
+
+The data files supplied with the Base application are located in the "data" directory in the application directory.  Custom data files are located in the "Convertator/data" directory in the user home directory.  On Linux and Unix, the user home directory is typically "/home/<username>".  On Windows, the user home directory is "My Documents".
+
+No permanent changes are made until Export to File is selected.  To reset all fields to the existing values in memory, close the window and re-open it.  To load a new category of Units, Constants, or Equations to be used in the main window, Convertator must be stopped and restarted.
+
+
+--- UNITS ---
+
+When Units are selected from the menu in the main window, the abbreviation is added to the Equation field at the current cursor location.  This may also be entered manually.  During the calculation of the Result, Units of the same type are reduced to the smallest unit in the Equation.  When the Result is modified by clicking on the ChgR button, the Result value is converted to the selected unit(s).
+
+Only units defined in the same category can be converted.  The relationship between units in the same category is the conversion factor.  The ratio between any two conversion factors is used to convert between those units.
+
+Ideally, there is a unit for which the ratio to the smallest and largest units are nearly equal.  The Factor for this middle unit is 1, while all others are the constant used to convert from the middle unit to the target unit.
+
+For example, the middle unit in the Distance category is the yard.  Some of the other Distance units and their conversion factors are:
+
+  Mile (mi):  0.00056818151
+  Meter (me):  0.9143999998
+  Yard (yd):  1
+  Foot (ft):  3
+  Centimeter (cm):  91.43999998
+
+The unit name must include both its name and its abbreviation.  The abbreviation may not be the same as any other unit abbreviation used by Convertator.  While this is straightforward to handle on a single computer, the Convertator web site will attempt to enforce it on all downloads.
+
+
+--- CONSTANTS ---
+
+Constants are displayed in groups from the main menu bar.  When selected, the value of the constant is inserted in the equation field at the current cursor location. 
+
+Constant definitions consist of the name and value of the constant.  The only constraint on the name and value is that they may not be more than 256 characters.  If the constant is an equation, such as "(2.86 * 10 ^ 24)" or "(32ft / 1sec)", it should be enclosed in parentheses so there are no conflicts when it is added to the Equation field.  It should also follow the normal rules for using parentheses in Convertator.
+
+
+--- EQUATIONS ---
+
+Equations are displayed in groups from the main menu bar.  When selected, the Equation field is cleared, the Result is set to 0, and the equation is entered in the Equation field.
+
+Equation definitions consist of the name and value of the equation.  The only constraint on the name and value is that they may not be larger than 256 characters each.  The equation value should include all necessary parentheses.  However, there may be placeholders indicating the type of value to be entered.  For example, the equation for the area of a rectangle could be "W * H".
+
+
+--- CUSTOMIZATION ---
+
+To add a new Category:
+  1) Click on the radio button of the type of data to be added.
+  2) Enter the category name in the Category text field at the bottom of the window (the convention is to capitalize the first letter of the name and use no spaces)
+  3) Click on the Add button in the bottom button group.
+
+  NOTE: The Name and Value will be initialized to NONE, and this must be modified by changing them to a valid entry before saving the new category to a file.
+
+To delete a Category:
+  1) Enter the name of the Category in the Category text field at the bottom of the window.
+  2) Click on the Del button in the bottom button group.
+
+  NOTE: The category file is deleted, but the information is still in memory and is displayed in the main window and the customization window until Convertator is stopped and restarted.  This allows the file to be saved if deleted by mistake.
+
+To add a new name/value pair:
+  1) Enter the name (and its abbreviation in parentheses if it is a Unit) in the Name text field in the middle of the window
+  2) Enter the conversion factor or value in the Value text field
+  3) Click on the Add button in the middle button group.
+
+To modify a name/value pair:
+  1) Select the entry to be modified from either the Name or Value menu (the corresponding entry will automatically be selected in the other menu)
+  2) Enter the name (and its abbreviation in parentheses if it is a Unit) in the Name text field in the middle of the window
+  3) Enter the value in the Value text field
+  4) Click on the Updt button in the middle button group.
+
+  NOTE: This needs to be done for the first name/value pair in a new group.
+
+To delete a name/value pair:
+  1) Select the entry to be deleted from either the Name or Value menu (the corresponding entry will automatically be selected in the other menu)
+  2) Click on the Del button in the middle button group.
+

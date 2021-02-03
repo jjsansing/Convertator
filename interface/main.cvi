@@ -1,0 +1,170 @@
+          Convertator - The converting calculator
+
+                      MAIN WINDOW
+
+--- MENU BAR ---
+
+The Convertator main window has a menu bar at the top which provides the following:
+
+  File ->
+
+    Customization:  This opens a window for editing Units, Constants, and Equations.  This window includes help for the functions it supports.
+
+    Import from Web:  This opens a window for downloading new definitions for Units, Constants, and Equations.  This window includes help for the functions it supports.
+
+    Quit:  This exits Convertator and closes all of the application windows.
+
+  Edit ->
+
+    Undo (F2):  This returns the Equation field to the previous saved value.  An equation is saved whenever a space or an operator, such as '(', '+', or '&' is entered, or the result is calculated.  The F2 key may be used as a shortcut.  The maximum number of undo states is 32, and may return the field to a previous equation.  There is no redo so changes after undo must be re-entered manually.
+
+    Clear Previous Eqtn/Rslt:  This clears the Previous Equation and Result popup lists.  See the description of these below.
+
+  Constants ->
+
+    This is a list of common mathematical constants, sorted by category.  When selected, the value of the constant is added to the Equation field at the current cursor location.  These may be added or modified in the Customization window.  See the Import window help for information about downloading additional Constants.
+
+  Equations ->
+
+    This is a list of pre-defined equations for common uses, such as calculating the area of a circle or coverting between Centigrade and Fahrenheit.  When selected, the Equation field is cleared, the Result is set to 0, and the Equation is entered in the Equation field.  These may be added or modified in the Customization window.  See the Import window help for information about downloading additional Equations.
+
+  Help ->
+
+    This displays helpful information about Convertator.
+
+
+--- EQUATION AND RESULT FIELDS ---
+
+  Equation field
+
+    This is an editable text field.  The text may be entered from the keyboard or by using the keypad buttons and pop-up lists.  The rules for entering equations are described in the Calculations help window.
+
+  ChgR Button
+
+     When this is clicked, a window is displayed below the Result field which allows results to be changed.  This is described in the Modify Result section at the end of this help screen.
+
+  Result field
+
+    To calculate an equation, click on the "=" button or press either the "=" key or the Enter key.  When an equation is calculated, the Result field displays the result or an error code.  It is not editable, but may be copied and then pasted into a file.
+
+    If there is an error, "??" is displayed in the Result field followed by an indication of what is incorrect in the Equation field.  For example, enter "1 + 2 * 3" and press Enter to see the error indication for incorrect use of parentheses.  See the Errors help for a description of all Errors that may be displayed in the Results field.
+
+  UseE Button
+
+    This allows previously calculated equations to be entered in the Equation field and then edited.  When the button is clicked, the Equation field is cleared, the Result is set to 0, and the previous equation entered.
+
+  Previous Equations
+
+    This popup list contains the previous equations that have been calculated.  When the "=" button is clicked, the current equation is entered in the list unless it already exists.  Selecting a previous equation also selects the corresponding previous result.
+
+  UseR Button
+
+    This allows previously calculated results to be entered in the Equation field.  When the button is clicked, the result is entered as displayed at the current Equation cursor location.  This allows equations to include results from previous calculations.
+
+  Previous Results
+
+    This popup list contains the previously calculated results.  When the "=" button is clicked, the Result field is copied into the Previous Results list, in the same location as the Previous Equation that matches the current equation.  Selecting a previous result also selects the corresponding previous equation.
+
+      NOTE: To clear all Previous Equations and Results, select:
+
+          Edit -> Clear Previous Eqtn/Rslt.
+
+
+--- RESULT FORMAT ---
+
+  Prec Selection
+
+    The precision sets the number of decimal places to be displayed.  The Precision is also applied when scientific notation is selected.
+
+  SciNot Checkbox
+
+    The scientific notation checkbox sets the format of the result to be in scientific notation or not.  The precision determines the number of digits to be displayed.
+
+
+--- KEYPAD ---
+
+The following Keypad keys are entered in the Equation field at the current cursor location.
+
+  0 - 9, A - F:  These are the number keys, including hexadecimal numbers.
+
+  ".":  This is the decimal point.
+
+  "_":  This enters a blank.
+
+  "<-", "->":  These move the cursor without changing any characters.
+
+  "=":  When this button is clicked, the current equation is calculated and the result displayed.
+
+  "Bks", "Del":  These erase a character.  The Bks removes the character immediately before the cursor.  The Del removes the character immediately after the cursor.
+
+  "Clr":  This clears the Equation field and sets the Result to 0.
+
+
+--- POPUP LISTS ---
+
+The popup lists supply the bases, operators, and units to be used in equations:
+
+  --- Base Button and Menu ---
+
+    This is the list of supported bases.  If the Base button is clicked or a new Base is selected, the valid number keys are made active and the base code is entered in the Equation field.  The supported Bases are:
+
+    Binary:  Only the 0 and 1 number keys are active, and the letter 'n' is entered in the Equation field.
+
+    Octal:  Only the number keys 0 - 7 are active, and the letter 'o' is entered in the Equation field.
+
+    Decimal:  Only the number keys 0 - 9 are active.  No letter is entered in the Equation field.  To mix other bases with decimal, precede the decimal value with the letter 'm'.
+
+    Hexadecimal:  All number keys are active, and the letter 'x' is entered in the Equation field.
+
+    Degrees:  Only the number keys 0 - 9 are active, and the letter 'g' is entered in the Equation field.
+
+    Radians:  Only the number keys 0 - 9 are active, and the letter 'r' is entered in the Equation field.
+
+    Dotted Decimal:  Only the number keys 0 - 9 are active, and the letter 'i' is entered in the Equation field.
+
+    ASCII:  All number keys are active, and "s''" is entered in the Equation field.  The computer keyboard must be used for keys not available on the keypad.  All ASCII text must be entered within the single quotes.
+
+    Unicode:  All number keys are active, and "u''" is entered in the Equation field.  The computer keyboard must be used for keys not available on the keypad.  All UTF-16 text must be entered within the single quotes.
+
+  --- Op Button and Menu ---
+
+    When the Op Button is clicked or a new operator is selected, it is entered in the Equation field.  The list of supported operators are described in detail in the Calculations help window.  The list includes the following:
+
+    "(", ")":  Parentheses must be used to indicate precedence.
+
+    "+", "-", "*", "/", "%":  These provide addition, subtraction, multiplication, division, and modulo arithmetic respectively.
+
+    "^", "\":  These provide power and square root.  The power value may be a fraction, but must not include units.
+
+    "S", "O", "T", "L", "l":  The supported functions are sine, cosine, tangent, logarithm, and natural log respectively.  If the function value is a single operand, parenthese are not required.  The trigonometric functions sine, cosine, and tangent require the units to be either radians or degrees.
+
+    "&", "|", "#", "!":  These provide the logic operations AND, OR, XOR, and NOT respectively.
+
+  --- Unit Button and Menu ---
+
+    This is the list of Units in the currently select Type.  If the Unit button is clicked or a new Unit is selected, it is entered in the Equation field.
+
+    When the Type menu selection is changed, the list of Units is changed to match.  Each Unit is assigned a conversion value, where the value of one is set to 1 and all others are relative to it.  These may be edited and new Units and Types created in the Customization window.  See the Import window help for information about downloading additional Units.
+
+  --- Type Menu ---
+
+    This is the list of Categories of Units that are available to the application.  See the Import window help for information about downloading additional Units.
+
+
+--- MODIFY RESULT WINDOW ---
+
+  When the ChgR button is clicked, a small window appears below the Result field with the base and units of the current result.  The fields in this window are:
+
+    Base list:  This popup list allows the base of the result to be changed.
+
+    Unit Type Radio Buttons:  When one of these is selected, the list of units is set to the selected type.  If there are no units in the result, there will not be any radio buttons.
+
+    Units list:  The currently selected unit is displayed.  A new selection to be used in the result may be selected.
+
+    Prec:  The precision to be used in the result may be changed.  The valid range is 0 - 10.
+
+    SciNot Checkbox:  The allows scientific notation to be used in the result or not.
+
+    Finish Button: When this button is clicked, the result is redisplayed using the newly selected base and/or units.
+
+

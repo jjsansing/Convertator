@@ -1,0 +1,14 @@
+
+x1 & xf = x1
+x1 | x2 = x3
+x1 # x2 = x3
+x1 # x5 = x4
+!x1 = xfffffffe
+
+(x2 & f) | (7 & 6) = x6
+!(x70 & f0) # (70 + 6) = xfffffff9
+
+!(x2 & f) = xfffffffd
+(x700 | 6) = x706
+!(x2 & f) & (x700 | 6) = x704
+

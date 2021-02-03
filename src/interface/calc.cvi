@@ -1,0 +1,101 @@
+          Convertator - The converting calculator
+
+                      CALCULATIONS
+
+Calculating with units is complex and Convertator places requirements on the input.  The procedure for using the features of Convertator are described in the following sections.  Limitations are described at the end of each section.
+
+See the Convertator documentation at https://github.com/jjsansing/Convertator for more information, including many examples and screenshots.
+
+--- EQUATION AND RESULT FIELDS ---
+
+Calculations are entered in the Equation field in free-form text.  Bases, Operators, and Units may be typed from the keyboard.  Otherwise the keypad and menus are available to ensure correct syntax.  Spaces are generally not required.
+
+   Note:  Hexadecimal values that have units must have spaces between the value and the unit.
+
+To calculate an equation, click on the "=" button or press either the "=" key or Enter.  The result of the calculation appears in the Result field.
+
+Errors are displayed in the Result field as "?? <err>".  For example, it is an error to combine different types of operators, such as addition and multiplication, without parentheses.
+
+Convertator does not support operator precedence, so parentheses must be entered to ensure that operations are performed in the correct order.  It is an error for different types of operators to be combined without parentheses.  To see this error, type "1 + 2 * 3" in the Equation field and press Enter.  The error displayed is:
+
+  "?? (+*)"
+
+To correct the error, the equation must be entered as either "(1 + 2) * 3" or "1 + (2 * 3)".
+
+Units are grouped by type, and can only be converted to other units of the same type.  If a result includes units, they may be changed by clicking on the ChgR Button.  This displays a window for modifying the format of the result with the selected base and units displayed in menu lists.  These and the Precision or Scientific Notation checkbox may be changed, and when the Finish button is clicked the equation is recalculated using the new format.
+
+--- Limitations ---
+
+Power values may not include units.  Thus, 4 ^ (2ft) is not allowed, while (4ft + 2sec) ^ 2 is.
+
+
+--- BASES ---
+
+There are three types of bases: numeric, character, and trigonometric.  They may be interchanged, although the result might be nonsensical.
+
+The numeric bases are: Binary(n), Octal(o), Decimal(m), and Hexadecimal(x)
+
+  If there is no base character, it is assumed to be decimal.  Otherwise, the character for the base must preceed the value.  Once a base is set, all values following it are assumed to be the same base unless it is changed.  If a decimal value is to follow another base value, the letter "m" sets the base to decimal.
+
+  The result base is the first base in the equation.  To see this, enter "x20 + o20" and press "=".  The click on Clr and enter "o20 + x20" and press "=".
+
+The character bases are: Dotted Decimal(i), ASCII(s), and Unicode(u)
+
+  ASCII and Unicode strings must be enclosed in single quotes (s'abc').
+
+  The maximum value of a dotted decimal field is 255.  If it is greater than that and the field is converted to a numeric value, the field is reduced to 255.  However, the original value is maintained, so that if it is changed back to dotted decimal, the original value is displayed.
+
+  To see an example of converting to a string base, enter "x41624364" and press "=".  To change the result, click on the ChgR button, and in the Modify Result window, select the base Dotted Decimal and click on the Finish button.  Then click on the ChgR button, and in the Modify Result window, select the base ASCII and click on the Finish button.
+
+The trigonometric bases are: Radians(r) and Degrees(g)
+
+  The values of these are decimal, and they only affect trignometric functions.
+
+--- Limitations ---
+
+Not all systems support Unicode.  To test yours, enter "xD1A1D01A" and press "=".  To change the result, click on the ChgR button, and in the Modify Result window, select the base Unicode and click on the Finish button.  If a square is displayed, the Java runtime environment is not configured to support Unicode.
+
+
+--- OPERATORS ---
+
+The operators available include the following:
+
+  Math operators:
+
+    "(", ")":  Parentheses must be used to indicate precedence.  The maximum nesting of parentheses is 64.  However, there is no limit to the number of parentheses groups at the same nesting level.
+
+    "+", "-", "*", "/", "%":  These provide addition, subtraction, multiplication, division, and modulo arithmetic respectively.
+
+      Addition and subtraction may be combined without requiring parentheses.
+
+    "^", "\":  These provide power and square root.  The power value may be a fraction, but must not include units.  The power of a number does not require parentheses.
+
+      Powers of equations including units may be calculated.  They must be enclosed in parenthese before the power sign.  If the power is a fraction, only the integer portion is used.  To see an example of this, enter '(2ft + 3 sec)^2' and press the "=" key.
+
+    "S", "O", "T", "L", "l":  The supported functions are Sine, cOsine, Tangent, Logarithm, and natural log respectively.  If the function value is a single operand, parenthese are not required.
+
+      The base of trigonometric functions sine, cosine, and tangent is either radians or degrees.  If neither is specified, it is assumed to be radians.
+
+    "&", "|", "#", "!":  These provide the logic operations AND, OR, XOR, and NOT respectively.  Logic operations may be performed on values with units, although the result might be nonsensical.
+
+--- Limitations ---
+
+Convertator does not support operator precedence, so parentheses must be entered when different operators are in the same equation.  Even when the operators are the same, parentheses may be required to ensure that operations are performed in the correct order.  For example, the equation "3 / 9 / 13" is calculated as "(3 / 9) / 13".
+
+
+--- UNITS ---
+
+Units are grouped by type.  The types included with the application are Area, Distance, Time, Volume, and Weight.  In the Equation field, units may follow numeric values without spaces, unless the base is hexadecimal, because these vales may be the letters "A" - "F", in upper or lower case and can be confused with unit abbreviations starting with one of those letters.
+
+In the Units menu, the names and abbreviations are listed in order of the ratios between the units, from largest unit to smallest.  Thus, mile preceeds foot.  The abbreviation must be used in the Equation field exactly as shown in the menu, without an ending period.
+
+When units of the same type are mixed in an equation, the smallest unit is displayed in the result.  When this is changed, all units of the same type in the result are changed.  To see an example of this, enter "2ft + 5in" and press "=".  To change the result, click on the ChgR button, and in the Modify Result window, select Centimeter, set the Precision to 2, and click on the Finish button.
+
+When units of different types are multiplied together, the first one maintains the value, and the rest are merely placeholders to indicate that the unit cannot be eliminated.  Also, the power of each is added and the unit and power are displayed.
+
+When equations include divison, units are reduced so that the first value in the denominator is one.  This means that the other values may be displayed as fractions.
+
+--- Limitations ---
+
+The relationship between units is limited to the same type of units.  Therefore, when a distance unit (such as feet) is squared, it is not equivalent to an area unit (such as acre).  This is why there are no electrical units included in the base application, because Volts = I(Amps) * R(Ohms) cannot be represented by a constant factor.  A workaround is to enter the values without units.
+

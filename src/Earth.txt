@@ -1,0 +1,19 @@
+Density (english) :: ((253.696ton * 10^8) / 1mi^3)
+
+Density (metric) :: ((552.154kg * 10^8) / 1km^3)
+
+
+Equator radius (english) :: 3969.34mi
+
+Mass (english) :: (6.595ton * 10^21)
+
+Polar radius (english) :: 3949.99mi
+
+
+Equator radius (metric) :: 6378.39km
+
+Mass (metric) :: (5.983kg * 10^24)
+
+Polar radius (metric) :: 6356.91km
+
+

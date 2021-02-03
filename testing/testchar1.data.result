@@ -1,0 +1,30 @@
+s'abc' x414243 i65.66.67 
+Result:  abcABCABC
+Expected:   abcABCABC
+________________
+
+x414243 i65.66.67 s'abc' 
+Result: x 414243   414243   616263 
+Expected:   x414243 414243 616263
+________________
+
+i65.66.67 s'abc' x414243 
+Result:  65.66.67 0.97.98.99 0.65.66.67
+Expected:   i65.66.67 97.98.99 65.66.67
+________________
+
+s'abcdef' 
+Result:  abcd ef
+Expected:  abcd ef
+________________
+
+s'abc' i120.119.118.117 
+Result:  abcxwvu
+Expected:  abcxwvu
+________________
+
+s'abc' x410143 
+Result:  abcAC
+Expected:  abcA^AC
+________________
+
